@@ -123,12 +123,47 @@
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
 
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-1" aria-controls="update-book-1">
+                                    Toggle static offcanvas
+                                  </button>
+                                  
+                                  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="update-book-1" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                      <div>
+                                        I will not close if you click outside of me.
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-1">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
-
                                 
-
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-1">Cancellare libro 1</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
@@ -142,9 +177,31 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary">
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-2">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-2">Cancellare libro 2</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
@@ -158,9 +215,31 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary">
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-3">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-3" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-3" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-3">Cancellare libro 3</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
@@ -174,9 +253,31 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary">
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-4">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-4" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-4" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-4">Cancellare libro 4</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
@@ -190,9 +291,31 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary">
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-5">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-5" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-5" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-5">Cancellare libro 5</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
@@ -206,9 +329,31 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary">
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-6">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-6" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-6" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-6">Cancellare libro 6</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
@@ -222,9 +367,31 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary">
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-7">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-7" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-7" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-7">Cancellare libro 7</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
@@ -238,9 +405,31 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary">
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-8">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-8" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-8" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-8">Cancellare libro 8</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
@@ -254,9 +443,31 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary">
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-9">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-9" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-9" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-9">Cancellare libro 9</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
@@ -270,9 +481,31 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary">
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-10">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-10" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-10" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-10">Cancellare libro 10</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
@@ -286,9 +519,31 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary">
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-11">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-11" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-11" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-11">Cancellare libro 11</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
 
@@ -302,16 +557,37 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-                                <button type="button" class="btn btn-outline-secondary">
+
+                                <!-- Modal trigger button -->
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-12">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+                                
+                                <!-- Modal Body -->
+                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                                <div class="modal fade" id="book-12" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitle-12" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalTitle-12">Cancellare libro 12</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sei sicuro di voler cancellare questo libro?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                <button type="button" class="btn btn-danger">Cancella</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             
-
         </div>
     </main>
     <!-- /#site_main -->
