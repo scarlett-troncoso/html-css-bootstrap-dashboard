@@ -51,16 +51,19 @@
                     </div>
                     <div class="offcanvas-body">
                       <div>
-                        <div class="mb-3">
-                          <label for="Titolo" class="form-label">Titolo</label>
-                          <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId">
-                          <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
-                        </div>
-                        <div class="mb-3">
-                          <label for="data" class="form-label">Data</label>
-                          <input type="date" name="data" id="data" class="form-control" placeholder="" aria-describedby="datahelpId">
-                          <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
-                        </div>
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="Titolo" class="form-label">Titolo</label>
+                                <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId">
+                                <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="data" class="form-label">Data</label>
+                                <input type="date" name="data" id="data" class="form-control" placeholder="" aria-describedby="datahelpId">
+                                <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -119,9 +122,13 @@
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+
                                 <button type="button" class="btn btn-outline-secondary">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
+
+                                
+
                             </td>
                         </tr>
 
