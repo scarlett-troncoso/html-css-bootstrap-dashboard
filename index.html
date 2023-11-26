@@ -37,6 +37,14 @@
 
     <main id="site_main">
         <div class="container">
+
+            <div class="row">
+                <div class="col-lg-8"></div>
+                <div class="col-lg-4"></div>
+            </div>
+
+
+
             <div class="d-flex justify-content-between align-items-center">
                 <h1 class="fs-3 my-3 text-muted">Catálogo Libri</h1>
 
@@ -119,25 +127,33 @@
                                 <span class="badge bg-success"> Disponibile </span>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-1" aria-controls="update-book-1">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
-
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-1" aria-controls="update-book-1">
-                                    Toggle static offcanvas
-                                  </button>
                                   
-                                  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="update-book-1" aria-labelledby="staticBackdropLabel">
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-1" aria-labelledby="staticBackdropLabel">
                                     <div class="offcanvas-header">
-                                      <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
-                                      <div>
-                                        I will not close if you click outside of me.
-                                      </div>
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="I pilastri della terra">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
                                     </div>
-                                  </div>
+                                </div>
 
 
                                 <!-- Modal trigger button -->
@@ -173,10 +189,35 @@
                             <td>
                                 <span class="badge bg-success"> Disponibile </span>
                             </td>
+
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-2" aria-controls="update-book-2">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+                                  
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-2" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="I promessi sposi">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-2">
@@ -211,10 +252,35 @@
                             <td>
                                 <span class="badge bg-warning"> In prestito </span>
                             </td>
+
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-3" aria-controls="update-book-3">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+                                  
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-3" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="Il signore degli anelli">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-3">
@@ -249,10 +315,35 @@
                             <td>
                                 <span class="badge bg-success"> Disponibile </span>
                             </td>
+
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-4" aria-controls="update-book-4">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+                                  
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-4" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="Harry Potter e la pietra filosofale">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-4">
@@ -287,10 +378,35 @@
                             <td>
                                 <span class="badge bg-danger"> Non disponibile </span>
                             </td>
+
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-5" aria-controls="update-book-5">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+                                  
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-5" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="Il codice Da Vinci">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-5">
@@ -325,10 +441,35 @@
                             <td>
                                 <span class="badge bg-success"> Disponibile </span>
                             </td>
+
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                 <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-6" aria-controls="update-book-6">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+                                  
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-6" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="Shining">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-6">
@@ -363,10 +504,35 @@
                             <td>
                                 <span class="badge bg-warning"> In prestito </span>
                             </td>
+
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-7" aria-controls="update-book-7">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+                                  
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-7" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="La divina commedia">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-7">
@@ -401,10 +567,35 @@
                             <td>
                                 <span class="badge bg-success"> Disponibile </span>
                             </td>
+
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-8" aria-controls="update-book-8">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+                                  
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-8" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="Il trono di spade">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-8">
@@ -439,10 +630,35 @@
                             <td>
                                 <span class="badge bg-danger"> Non disponibile </span>
                             </td>
+
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-9" aria-controls="update-book-9">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+                                  
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-9" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="Il mondo di Sofia">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-9">
@@ -477,10 +693,35 @@
                             <td>
                                 <span class="badge bg-warning"> In prestito </span>
                             </td>
+
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-10" aria-controls="update-book-10">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+                                  
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-10" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="Le cronache di Narnia: il leone, e l'armadio">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-10">
@@ -515,10 +756,35 @@
                             <td>
                                 <span class="badge bg-success"> Disponibile </span>
                             </td>
+
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-11" aria-controls="update-book-11">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+                                  
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-11" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="Il piccolo principe">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-11">
@@ -553,10 +819,35 @@
                             <td>
                                 <span class="badge bg-success"> Disponibile </span>
                             </td>
+
                             <td>
-                                <button type="button" class="btn btn-outline-secondary">
+                                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#update-book-12" aria-controls="update-book-12">
                                     <i class="fas fa-pencil-alt fa-sm fa-fw"></i>
                                 </button>
+                                  
+                                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="update-book-12" aria-labelledby="staticBackdropLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Editare Libro</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div>
+                                            <form action="">
+                                                <div class="mb-3">
+                                                    <label for="Titolo" class="form-label">Titolo</label>
+                                                    <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId" value="La storia infinita">
+                                                    <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data</label>
+                                                    <input type="date" name="data" id="data" class="form-control" placeholder="" value="2023-11-26" aria-describedby="datahelpId">
+                                                    <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#book-12">
