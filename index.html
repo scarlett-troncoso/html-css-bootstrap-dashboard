@@ -13,13 +13,13 @@
 </head>
 
 <body class="debug">     
-    <header>
+    <header id="site_header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./img/duck.png" alt="Bootstrap" width="50" height="50">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainNav">
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </nav>
-    </header id="site_header">
+    </header>
     <!-- /#site_header -->
 
     <main id="site_main">
@@ -40,9 +40,30 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h1 class="fs-3 my-3 text-muted">Catálogo Libri</h1>
 
-                <button class="btn btn-primary">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#aggiungilibro" aria-controls="aggiungilibro">
                     Aggiungi Libro
-                </button>
+                  </button>
+                  
+                  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="aggiungilibro" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div>
+                        <div class="mb-3">
+                          <label for="Titolo" class="form-label">Titolo</label>
+                          <input type="text" name="Titolo" id="Titolo" class="form-control" placeholder="Imparare Letteratura" aria-describedby="titolohelpId">
+                          <small id="titolohelpId" class="text-muted">Inserisci qui sopra il titolo del libro</small>
+                        </div>
+                        <div class="mb-3">
+                          <label for="data" class="form-label">Data</label>
+                          <input type="date" name="data" id="data" class="form-control" placeholder="" aria-describedby="datahelpId">
+                          <small id="datahelpId" class="text-muted">Aggiungi la data di caricamento per questo libro</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
             <!-- <div class="table-responsive-md">
